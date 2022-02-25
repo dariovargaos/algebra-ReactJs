@@ -1,10 +1,20 @@
 import './App.css';
-import{header, hero, footer} from './components';
+import {Header, Hero, Footer, 
+  FunctionalComponent, 
+  ClassComponent, 
+  FuncKomponenta, 
+  KlasaKomponenta,
+  Comment } from './Components';
 
 function App() {
   return (
     <div>
-      <h5>OVDJE CEMO VIDJETI NASE KOMPONENTE</h5>
+      <FunctionalComponent name="Jelena"/>
+      <ClassComponent name="Dario"/>
+      <Comment/>
+
+      <FuncKomponenta name1="Dario" name2="Jelena"/>
+      <KlasaKomponenta name3="Jelena" name4="Dario"/>
     </div>
   );
 }
