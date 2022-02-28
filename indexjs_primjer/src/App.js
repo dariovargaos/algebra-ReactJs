@@ -28,7 +28,11 @@ function App() {
         author={comment.author}
       /> */}
       <MultiplePropsComponent
-      
+      name="Dario"
+      years="28"
+      gender="Muško"
+      location="Osijek"
+      favoriteClub="Arsenal"
       />
 
       <MultiplePropsClassComponent
