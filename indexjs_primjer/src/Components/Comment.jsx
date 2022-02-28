@@ -1,18 +1,29 @@
+function Avatar(props){
+    return(
+        <img className="Avatar" src = {props.author.avatarURL} alt={props.author.name} />
+    );
+}
+
+function formatDate(date){
+    return date.toLocaleDateString();
+}
+
 export default function Comment(props){
     return (
-        <div class="Comment">
-            <img src = {props.author.avatarURL} alt={props.author.name} />
-            
-            <div class="Author">
+        <div className="Comment">
+           
+            <Avatar author={props.author}/>
+
+            <div className="Author">
                 {props.author.name}
             </div>
 
-            <div class="text">
+            <div className="text">
                 {props.text}
             </div>
 
-            <div class="date">
-                {props.date}
+            <div className="date">
+                {formatDate(props.date)}
             </div>
         </div>
     );

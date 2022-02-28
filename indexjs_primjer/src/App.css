@@ -6,6 +6,11 @@
   background-color: red;
 }
 
+.Avatar {
+  max-width: 200px;
+  border-radius: 100%;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
