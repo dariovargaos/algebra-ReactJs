@@ -4,7 +4,9 @@ import {Header, Hero, Footer,
   ClassComponent, 
   FuncKomponenta, 
   KlasaKomponenta,
-  Comment } from './Components';
+  Comment, 
+  MultiplePropsComponent,
+  MultiplePropsClassComponent} from './Components';
 
   const comment = {
     date: new Date(),
@@ -18,16 +20,23 @@ import {Header, Hero, Footer,
 function App() {
   return (
     <div>
-      <FunctionalComponent name="Jelena"/>
+      {/*<FunctionalComponent name="Jelena"/>
       <ClassComponent name="Dario"/>
       <Comment
         date={comment.date}
         text={comment.text}
         author={comment.author}
+      /> */}
+      <MultiplePropsComponent
+      
       />
 
-      <FuncKomponenta name1="Dario" name2="Jelena"/>
-      <KlasaKomponenta name3="Jelena" name4="Dario"/>
+      <MultiplePropsClassComponent
+      name="Dragana"
+      age="63" />
+
+      {/*<FuncKomponenta name1="Dario" name2="Jelena"/>
+      <KlasaKomponenta name3="Jelena" name4="Dario"/> */}
     </div>
   );
 }
