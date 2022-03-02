@@ -4,6 +4,10 @@ import StateExercise from './Components/StateExercise';
 import Car from './Components/Car';
 import SendsState from './Components/Counter';
 import ReceivesState from './Components/Counter';
+import Hooks from './Components/Hooks';
+import Events from './Components/Events';
+import Effect from './Components/Effects';
+import Lifecycle from './Components/Lifecycle';
 
 
 
@@ -13,7 +17,7 @@ import Homer from './Components/Simpsons';
 function App() {
   return (
     <div>
-      <MyComponent />
+      {/*<MyComponent />
       {<hr></hr>}
 
       <StateExercise />
@@ -29,6 +33,15 @@ function App() {
       {<hr></hr>}
 
       <Homer />
+
+      <Hooks />  
+
+      <Events />
+
+      <Effect /> */}
+
+      <Lifecycle />
+
     </div>
   );
 }
